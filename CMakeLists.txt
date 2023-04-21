@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.1)
 project(SolarToLunar)
 
-add_subdirectory(Dependencies/mongoose)
-add_subdirectory(Dependencies/am-duong-lich)
-include_directories(Dependencies/mongoose/src)
-include_directories(Dependencies/json)
-include_directories(Dependencies/am-duong-lich/include)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/mongoose)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/am-duong-lich)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/mongoose/src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/json)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/am-duong-lich/include)
 
 set(BUILD_EXAMPLES OFF)
 
