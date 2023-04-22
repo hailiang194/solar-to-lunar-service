@@ -2,4 +2,5 @@ services:
   - type: web
     name: solar_to_lunar
     env: docker
+    plan: free
     region: singapore
